@@ -1,11 +1,17 @@
 import React from 'react'
 import Header from './components/Header'
+import Feedback from './components/Feedback'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <>
-        <Header/>
-    </>
+       <div className='relative'>
+       <Header/>   
+       <Hero/>
+       <Feedback/>
+       </div>
+         </>
   )
 }
 
