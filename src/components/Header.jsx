@@ -52,7 +52,7 @@ function Header() {
         } w-full  text-white z-[99999] top-0 left-0 `}
       >
         <div className=" md:w-3/4 m-auto  h-full">
-          <div className="flex items-center justify-between px-8 py-4 bg-transparent text-white">
+          <div className="flex items-center justify-between p-5 lg:px-8 py-4 bg-transparent text-white">
             <div className="flex items-center">
               <h1 className="text-4xl font-bold">Web Wise</h1>
             </div>

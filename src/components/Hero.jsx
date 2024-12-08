@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <div
-        className={`relative h-screen bg-[url('/src/assets/hero-12.jpeg')] bg-cover bg-center filter  `}
+        className={`relative h-[70vh] md:h-screen bg-[url('/src/assets/hero-12.jpeg')] bg-cover bg-center filter  `}
       >
         {/* Foreground Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(37,37,37,0.8)] to-[#000000] "></div>
@@ -82,7 +82,7 @@ function Hero() {
         {/* Blur Background */}
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-white text-center h-full">
+        <div className="relative z-10 flex flex-col pt-12 md:pt-0 items-center justify-center text-white text-center h-full">
           <h1 className="text-4xl md:text-6xl font-bold">
             Empowering Your Digital Future
           </h1>
