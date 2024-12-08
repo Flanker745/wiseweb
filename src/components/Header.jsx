@@ -62,7 +62,7 @@ function Header() {
             >
               ☰
             </button>
-            <ul className={` ${menuOpen ? "left-0" : "left-[-100%]"}  md:left-0 top-0  duration-700  block md:relative absolute bg-black w-[60%] h-screen md:h-fit md:w-fit md:bg-transparent  md:flex space-x-6 text-sm `}>
+            <ul className={` ${menuOpen ? "left-0" : "left-[-100%]"}  md:left-0 top-0  duration-700  block md:relative absolute bg-black w-[60%] h-screen md:h-fit md:w-fit md:bg-transparent  md:flex space-x-6 text-[12px] `}>
               <div className="text-right block md:hidden">
                 <button onClick={closeMenu}  className="p-2 text-4xl">&times;</button>
               </div>
@@ -76,11 +76,33 @@ function Header() {
                   About
                 </a>
               </li>
-              <li>
-                <a href="#services" className="hover:text-red-500">
-                  Service
-                </a>
-              </li>
+              <div className="relative group hover:text-red-500">
+                  <div className="flex items-center">
+                    Services
+                    <span className="ml-1 transform duration-300 group-hover:rotate-180">
+                      +
+                    </span>
+                  </div>
+                  <div className="absolute left-0 top-full overflow-hidden max-h-0 group-hover:max-h-64 duration-700 bg-[rgba(26_26_26)] text-[11px] text-white shadow-lg mt-2 w-40 ">
+                    <ul className="">
+                      <li className="hover:bg-red-700 px-2 py-1 border-neutral-600 border-b ">
+                        Service 1
+                      </li>
+                      <li className="hover:bg-red-700 px-2 py-1 border-neutral-600 border-b ">
+                        Service 2
+                      </li>
+                      <li className="hover:bg-red-700 px-2 py-1 border-neutral-600 border-b ">
+                        Service 3
+                      </li>
+                      <li className="hover:bg-red-700 px-2 py-1 border-neutral-600 border-b ">
+                        Service 4
+                      </li>
+                      <li className="hover:bg-red-700 px-2 py-1">
+                        Service 5
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               <li>
                 <a href="#projects" className="hover:text-red-500">
                   Project
@@ -98,7 +120,7 @@ function Header() {
               </li>
             </ul>
             
-            <div className=" hidden flex-none items-center gap-4 text-sm dark:text-white lg:flex">
+            <div className=" hidden flex-none items-center gap-4 text-xs dark:text-white lg:flex">
               <FaPhoneAlt className="flex-none" size={28} />
               <div>
                 <p>Need help?</p>

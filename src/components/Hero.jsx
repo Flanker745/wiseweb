@@ -1,48 +1,53 @@
 import React, { useEffect, useState } from "react";
 import img from "/src/assets/shape-5.png";
-import { FaPhoneAlt } from "react-icons/fa"; // Importing the phone icon
+import { HiArrowLongRight } from "react-icons/hi2";
 
 function Hero() {
   return (
     <>
       <div
-        className={`relative h-screen bg-[url('/src/assets/hero-11.jpeg')] bg-cover bg-center filter grayscale `}
+        className={`relative h-screen bg-[url('/src/assets/hero-12.jpeg')] bg-cover bg-center filter  `}
       >
         {/* Foreground Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(37,37,37,0.8)] to-[rgba(0,0,0,0.9)]"></div>
-        <span className="absolute z-1 left-0 top-0 hidden lg:block">
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(37,37,37,0.8)] to-[#000000] "></div>
+        <span
+          class="pointer-events-none absolute z-1 left-[-100px] top-[-100px] hidden lg:block aos-init aos-animate"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <svg
-            width="214"
-            height="470"
+            width="350"
+            height="420"
+            viewBox="0 0 214 470"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               opacity="0.3"
               d="M-154.988 -640.533C-246.834 -636.395 -330.486 -574.566 -390.536 -466.574C-450.36 -358.902 -479.66 -218.08 -472.988 -70.0004C-466.315 78.0794 -424.469 215.685 -355.204 317.54C-285.682 419.745 -196.811 473.749 -104.965 469.61C-13.1178 465.472 70.4961 403.695 130.583 295.651C190.427 187.978 219.708 47.1472 213.036 -100.913C206.364 -248.972 164.536 -386.609 95.2513 -488.463C25.6902 -590.666 -63.1409 -644.672 -154.988 -640.533ZM-105.01 468.611C-196.497 472.734 -285.06 418.886 -354.378 316.973C-423.556 215.274 -465.326 77.8246 -471.989 -70.0454C-478.652 -217.915 -449.414 -358.584 -389.663 -466.083C-329.792 -573.817 -246.43 -635.412 -154.943 -639.534C-63.4555 -643.657 25.1082 -589.809 94.3861 -487.894C163.564 -386.195 205.334 -248.746 211.997 -100.866C218.66 47.0142 189.462 187.651 129.671 295.162C69.8394 402.894 -13.5225 464.489 -105.01 468.611Z"
-              className="fill-accent-900 dark:fill-white"
+              class="fill-accent-900 dark:fill-white"
             ></path>
           </svg>
-          <span className="absolute animate-slow-spin left-[125px] top-[215px] z-1">
+          <span class="absolute animate-slow-spin left-[190px] top-[215px] z-1">
             <svg
-              className="animate-rotate-me"
-              width="58"
-              height="59"
+              class="animate-rotate-me"
+              width="38"
+              height="39"
               viewBox="0 0 58 59"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M39.7784 0.611394L22.6412 15.4979L0.18668 18.792L15.0728 35.9193L18.3573 58.3842L35.4946 43.4977L57.9491 40.2036L43.0626 23.0663L39.7784 0.611394Z"
-                className="fill-primary-light dark:fill-white"
+                class="fill-primary-light dark:fill-white"
               ></path>
             </svg>
           </span>
         </span>
-        <span className=" absolute z-1 right-0 top-[60px] hidden lg:block">
+        <span className=" absolute  z-1 right-0 top-[60px] hidden lg:block">
           <svg
-            width="136"
-            height="869"
+            width="90"
+            height="600"
             viewBox="0 0 136 869"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -53,11 +58,11 @@ function Hero() {
               className="fill-accent-900 dark:fill-white"
             ></path>
           </svg>
-          <span className="absolute animate-slow-spin right-[80px] top-[350px] z-1">
+          <span className="absolute animate-slow-spin right-[52px] top-[250px] z-1">
             <svg
               className="animate-rotate-me "
-              width="58"
-              height="59"
+              width="38"
+              height="39"
               viewBox="0 0 58 59"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +89,10 @@ function Hero() {
           <p className="text-lg md:text-xl mt-4">
             Discover the power of technology with us
           </p>
-          <button className="mt-6 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg shadow-lg">
+          <button className="mt-6 px-6 py-3 flex gap-2 items-center bg-red-700 hover:bg-red-800 text-white font-semibold rounded-full text-xs  shadow-lg">
             Discover More
+            <HiArrowLongRight className="text-2xl" />
+
           </button>
         </div>
       </div>
