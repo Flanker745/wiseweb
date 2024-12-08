@@ -86,10 +86,10 @@ function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold">
             Empowering Your Digital Future
           </h1>
-          <p className="text-lg md:text-xl mt-4">
+          <p className="text-lg md:text-3xl mt-4">
             Discover the power of technology with us
           </p>
-          <button className="mt-6 px-6 py-3 flex gap-2 items-center bg-red-700 hover:bg-red-800 text-white font-semibold rounded-full text-xs  shadow-lg">
+          <button className="mt-6 px-6 py-3 flex gap-2 items-center bg-red-700 hover:bg-red-800 text-white font-semibold rounded-full text-xl  shadow-lg">
             Discover More
             <HiArrowLongRight className="text-2xl" />
 

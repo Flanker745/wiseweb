@@ -54,7 +54,7 @@ function Header() {
         <div className=" md:w-3/4 m-auto  h-full">
           <div className="flex items-center justify-between px-8 py-4 bg-transparent text-white">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold">Web Wise</h1>
+              <h1 className="text-4xl font-bold">Web Wise</h1>
             </div>
             <button
               className="text-white text-2xl focus:outline-none md:hidden"
@@ -62,7 +62,7 @@ function Header() {
             >
               ☰
             </button>
-            <ul className={` ${menuOpen ? "left-0" : "left-[-100%]"}  md:left-0 top-0  duration-700  block md:relative absolute bg-black w-[60%] h-screen md:h-fit md:w-fit md:bg-transparent  md:flex space-x-6 text-[12px] `}>
+            <ul className={` ${menuOpen ? "left-0" : "left-[-100%]"}  md:left-0 top-0  duration-700  block md:relative absolute bg-black w-[60%] h-screen md:h-fit md:w-fit md:bg-transparent  md:flex space-x-9 text-xl `}>
               <div className="text-right block md:hidden">
                 <button onClick={closeMenu}  className="p-2 text-4xl">&times;</button>
               </div>
@@ -83,7 +83,7 @@ function Header() {
                       +
                     </span>
                   </div>
-                  <div className="absolute left-0 top-full overflow-hidden max-h-0 group-hover:max-h-64 duration-700 bg-[rgba(26_26_26)] text-[11px] text-white shadow-lg mt-2 w-40 ">
+                  <div className="absolute left-0 top-full overflow-hidden max-h-0 group-hover:max-h-64 duration-700 bg-[rgba(26_26_26)] text-white shadow-lg mt-2 w-40 ">
                     <ul className="">
                       <li className="hover:bg-red-700 px-2 py-1 border-neutral-600 border-b ">
                         Service 1
@@ -120,7 +120,7 @@ function Header() {
               </li>
             </ul>
             
-            <div className=" hidden flex-none items-center gap-4 text-xs dark:text-white lg:flex">
+            <div className=" hidden flex-none items-center gap-4 dark:text-white lg:flex">
               <FaPhoneAlt className="flex-none" size={28} />
               <div>
                 <p>Need help?</p>
