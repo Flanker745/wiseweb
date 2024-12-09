@@ -27,7 +27,7 @@ const ServiceCards = () => {
   ];
 
   return (
-    <div className="md:mt-24 text-white w-11/12 md:w-3/4 m-auto grid md:grid-cols-3 gap-6">
+    <div className="lg:mt-24 text-white w-11/12 lg:w-3/4 m-auto grid md:grid-cols-3 gap-6">
       {cards.map((card, index) => (
         <div
           key={index}
